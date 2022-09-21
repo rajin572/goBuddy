@@ -1,0 +1,852 @@
+/* google fonst cdn */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+/* defult codes */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background:linear-gradient(rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8)) ,url(../images/main-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* start work with navbar */
+.navbar{
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.logo h3{
+    user-select: none;
+    font-size: 25px;
+    color: rgb(237, 234, 87);
+    text-decoration: underline;
+    cursor: default;
+}
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navlist-list-items{
+    list-style: none;
+}
+.navlist-list-items a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.navlist-list-items a:hover{
+    background-color: #edea57;
+    color: #000000;
+}
+.sticky{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    border-bottom: 2px solid rgb(237, 234, 87, 0.9);
+    padding: 20px 50px;
+    transition: 1s;
+}
+@media only screen and (max-width: 768px) {
+    .navlist{
+        display: none;
+    }
+}
+
+/* End work with navbar */
+
+/* start work with header-section */
+.header-section{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-section h1{
+    font-size: 50px;
+    color: #ffe600;
+    padding: 30px 0px;
+}
+.header-section h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 50px;
+}
+.header-section img{
+    width: 50%;
+}
+.header-section button{
+    background-color: transparent;
+    color: #ffe600;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid #ffe600;
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 50px;
+}
+.header-section button:hover{
+    background-color: #ffe600;
+    color: rgb(0, 0, 0);
+    border: 2px solid #ffe600;
+    transition: 1s;
+}
+.fa-angles-right{
+    margin-left: 10px;
+}
+@media only screen and (max-width: 1024px) {
+    .header-section h1{
+        font-size: 45px;
+        color: #ffe600;
+        padding: 30px 0px;
+    }
+    .header-section h2{
+        font-size: 25px;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header-section h1{
+        font-size: 40px;
+        color: #ffe600;
+        padding: 30px 0px;
+    }
+    .header-section h2{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 50px;
+    }
+    .header-section img{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .header-section h1{
+        font-size: 30px;
+        color: #ffe600;
+        padding: 30px 0px;
+    }
+    .header-section h2{
+        font-size: 15px;
+        color: white;
+        margin-bottom: 50px;
+    }
+    .header-section img{
+        width: 100%;
+    }
+    .header-section button{
+        padding: 8px 15px;
+    }
+}
+/* End work with header-section */
+
+
+
+
+
+/* start work with Booking-section */
+.booking-section{
+    margin-top: -150px;
+    background-color: #ffe600;
+    width: 100%;
+}
+.booking-section-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 200px 0px 50px;
+    margin: auto;
+}
+.booking-text h1{
+    font-size: 40px;
+    margin: 20px 0px;
+
+}
+.booking-text h3{
+    font-size: 30px;
+}
+.booking-text p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.booking-text button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000000;
+    border:2px solid #000000;
+    background-color: #000000;
+    color: #ffe600;
+    border:2px solid #000000;
+    cursor: pointer;
+    transition: 1s;
+}
+.booking-text button:hover{
+    background-color: transparent;
+    color: #000000;
+    border:2px solid #000000;
+    transition: 1s;
+}
+
+.booking-from{
+    background-color: white;
+    
+}
+
+.booking-from h2{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+.booking-from-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    padding: 20px;
+}
+.booking-from-details input{
+    padding:10px 5px;
+    border: none;
+    border-bottom: 2px solid rgb(150, 150, 150);
+    outline: none;
+}
+.booking-from-details select{
+    grid-column:  1 / span 2;
+    padding:10px 5px;
+    border: none;
+    border-bottom: 2px solid rgb(150, 150, 150);
+    outline: none;
+}
+.booking-from-details input:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.booking-from button{
+    display: block;
+    width: 90%;
+    background-color: #000000;
+    color: #ffe600;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .booking-section{
+        margin-top: -100px;
+        background-color: #ffe600;
+        width: 100%;
+    }
+    .booking-section-content{
+        width: 90%;
+        padding: 150px 0px 50px;
+        gap: 20px;
+    }
+    .booking-text h1{
+        font-size: 30px;
+        margin: 20px 0px;
+    
+    }
+    .booking-text h3{
+        font-size: 20px;
+    }
+    .booking-text p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .booking-text button{
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #000000;
+        border:2px solid #000000;
+        background-color: #000000;
+        color: #ffe600;
+        border:2px solid #000000;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .booking-section{
+        margin-top: -80px;
+        background-color: #ffe600;
+        width: 100%;
+    }
+    .booking-section-content{
+        width: 95%;
+        flex-direction: column;
+        padding: 100px 0px 50px;
+    }
+    .booking-from{
+        width: 90%;
+        background-color: white;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+    .booking-from-details{
+        display: block;
+        /* gap: 10px; */
+        /* padding: 20px; */
+    }
+    .booking-from h2{
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+        font-size: 25px;
+    }
+    .booking-from-details input{
+        display: block;
+        width: 100%;
+    }
+    .booking-from-details select{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .booking-section{
+        margin-top: -50px;
+        background-color: #ffe600;
+        width: 100%;
+    }
+}
+/* End work with booking-section */
+
+
+
+
+/* start work with our-services-section */
+.our-services-section{
+    width: 70%;
+    text-align: center;
+    margin: 100px auto 100px;
+}
+.our-services-section h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.our-services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px 30px;
+}
+.card{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding:20px 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px black;
+}
+.recomnded{
+    position: relative;
+    background-color: #ffe600;
+    color: #000000;
+    padding:20px 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    z-index: 0;
+}
+.card img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.card-text{
+    text-align: left;
+    color: rgb(200, 200, 200);
+}
+.recomnded-text{
+    text-align: left;
+    color: rgb(60, 60, 60);
+}
+.recomnded span{
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px black;
+    color: #ffe600;
+    border-radius: 14px;
+    z-index: 0;
+}
+.price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #ffe600;
+}
+.recomnded-price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+.card p{
+    margin: 20px 0px;
+}
+.card button{
+    padding: 10px 20px;
+    background-color: #ffe600;
+    color: #000000;
+    border: 2px solid #ffe600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1s;
+}
+.recomnded button{
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffe600;
+    border: 2px solid #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1s;
+}
+.card button:hover{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1s;
+}
+@media only screen and (max-width: 1024px) {
+    .our-services-section{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .our-services{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px 30px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .our-services-section h2{
+        font-size: 40px;
+    }
+    .our-services{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px 30px;
+    }
+}
+/* End work with our-services-section */
+
+
+/* start work with about-section */
+.about{
+    background:linear-gradient(rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8)) ,url(../images/happy-clients.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+}
+.about-section{
+    width: 80%;
+    margin: 0px auto;
+}
+.about-section h2{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 0px 0px 100px;
+}
+.about-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+}
+.about-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-star, .fa-hourglass-start,.fa-gear,.fa-fort-awesome{
+    background-color: #ddd900;
+    padding: 20px;
+    font-size: 50px;
+    margin-right: 10px;
+    border-radius: 10%;
+}
+.about-card h3{
+    color: #ddd900;
+    margin-bottom: 10px;
+}
+.about-card p{
+    color: rgb(205, 205, 205);
+    margin-bottom: 10px;
+}
+.about-section button{
+    display: block;
+    background-color: #ffe600;
+    color: #000000;
+    border: 2px solid #ffe600;
+    padding: 10px 20px;
+    margin: 100px auto 0px;
+}
+@media only screen and (max-width: 1024px) {
+    .about-section{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about-section{
+        width: 90%;
+    }
+    .about-section h2{
+        font-size: 40px;
+    }
+    .about-details{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 50px;
+    }
+    .fa-star, .fa-hourglass-start,.fa-gear,.fa-fort-awesome{
+        font-size: 40px;
+    }
+    .about-card h3{
+        font-size: 20px;
+    }
+    .about-card p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .about-section h2{
+        font-size: 30px;
+    }
+    .fa-star, .fa-hourglass-start,.fa-gear,.fa-fort-awesome{
+        font-size: 25px;
+    }
+    .about-card h3{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .about-card p{
+        font-size: 13px;
+    }
+}
+/* End work with about-section */
+
+
+
+
+/* Start work with download-section */
+.download-section{
+    margin: 100px 0px;
+    text-align: center;
+}
+.download-section h2{
+    font-size: 30px;
+    color: #000000;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+.android, .apple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.download img{
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 576px) {
+    .download-section h2{
+        font-size: 20px;
+    }
+    .download{
+        gap: 10px;
+        margin-top: 100px;
+    }
+    .android, .apple{
+        gap: 10px;
+        padding: 8px 15px;
+    }
+    .download img{
+        width: 20px;
+        height: 20px;
+    }
+    .download h3{
+        font-size: 12px;
+    }
+    .download h4{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 250px) {
+    .download-section h2{
+        font-size: 20px;
+    }
+    .download{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin-top: 100px;
+    }
+    .android, .apple{
+        gap: 7px;
+        padding: 5px 10px;
+    }
+    .download img{
+        width: 15px;
+        height: 15px;
+    }
+    .download h3{
+        font-size: 10px;
+    }
+    .download h4{
+        font-size: 10px;
+    }
+}
+
+/* End work with download-section */
+
+
+
+
+/* Start work with Testimonial-section */
+
+.testimonial-section{
+    background:linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)) ,url(../images/michael-daniels-yHh07IGJAJM-unsplash.jpg);
+    margin: 100px 0px 0px;
+    padding: 100px 0px;
+}
+.testimonial-section h3{
+    text-align: center;
+    color: #ffe600;
+    font-size: 40px;
+}
+.testimonial-section h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: 10px 0px 50px;
+}
+.testimonial-cards{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+.testimonial{
+    background-color: #ffffff;
+    color: #000000;
+    padding:20px 30px;
+    border-radius: 5px;
+}
+.testimonial p{
+    font-size: 18px;
+    color: #373737;
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.review img{
+width: 50px;
+height: 50px;
+border-radius: 100%;
+margin-right: 10px;
+}
+.author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.stars .fa-star{
+    font-size: 12px;
+    background: none;
+    padding: 0%;
+    color: #ffe600;
+    margin: 0px;
+}
+@media only screen and (max-width: 792px) {
+    .testimonial-section h3{
+        font-size: 30px;
+    }
+    .testimonial-section h1{
+        font-size: 40px;
+    }
+    .testimonial-cards{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .testimonial-section h3{
+        font-size: 20px;
+    }
+    .testimonial-section h1{
+        font-size: 25px;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .stars{
+        margin-left: 50px;
+    }
+}
+
+/* End work with testimonial-section */
+
+
+/* Start work with contact-section */
+.contact-section{
+    padding: 100px 0px;
+    background-color: #ffd900;
+    color: #000000;
+    text-align: center;
+}
+.contact-section h3{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.contact-section h1{
+    font-size: 50px;
+    /* margin-bottom: 20px; */
+}
+@media only screen and (max-width: 767px) {
+    .contact-section h3{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .contact-section h1{
+        font-size: 40px;
+        /* margin-bottom: 20px; */
+    }
+}
+@media only screen and (max-width: 425px) {
+    .contact-section h3{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .contact-section h1{
+        font-size: 30px;
+        /* margin-bottom: 20px; */
+    }
+}
+/* End work with contact-section */
+
+
+
+
+/* Start work with Footer-section */
+footer{
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+footer hr{
+    width: 90%;
+    height: 5px;
+    background-color: #ffd900;
+    border: 1px solid #ffd900;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+.social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.social .fa-brands{
+    color: #ffd900;
+    font-size: 20px;
+    cursor: pointer;
+}
+.download-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    color: #ffd900;
+    margin-top: 30px;
+}
+.download-links .fa-brands{
+    color: white;
+}
+.download-links div{
+    cursor: pointer;
+    font-size: 20px;
+}
+.footer-contact{
+    font-size: 20px;
+}
+.footer-contact p{
+    margin-bottom: 10px;
+}
+.footer-contact .fa-solid{
+    color: #ffd900;
+}
+@media only screen and (max-width: 768px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 10px;
+    }
+}
+@media only screen and (max-width:240px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 0px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
